@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[53]:
+# In[55]:
 
 
 __author__ = "Ganesh Chandrasekaran"
@@ -26,15 +26,14 @@ def fn_countdown(thread,count):
 def main():
     #threading t1 and t2
 
-    thread1 = threading.Thread(target=fn_countdown,args=('Thread-1',20))
+    thread1 = threading.Thread(target=fn_countdown,args=('Even Thread',20))
     thread1.start()
 
-    thread2 = threading.Thread(target=fn_countdown,args=('Thread-2',19))
+    thread2 = threading.Thread(target=fn_countdown,args=('Odd Thread',19))
     thread2.start()
 
 def addtolist(ts,thread,count):
     th_lst.append((ts,thread,count))
-    
     
     
 if __name__ == '__main__':
