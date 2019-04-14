@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[11]:
+# In[15]:
 
 
 __author__ = "Ganesh Chandrasekaran"
@@ -28,11 +28,17 @@ class fn_Countdown(multiprocessing.Process):
         return
 
 if __name__ == '__main__':
-   process1 = fn_Countdown('Process-1 ', 20)
+   process1 = fn_Countdown('Even Process ', 20)
    process1.start()                
 
-   process2 = fn_Countdown('Process-2 ',19)
-   process2.start()      
+   process2 = fn_Countdown('Odd Process ',19)
+   process2.start()
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
